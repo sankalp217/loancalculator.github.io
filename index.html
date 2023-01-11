@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loan calculater</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        #loading,#result{
+            display: none;
+        }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <div class="cobtainer">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading pb-3">Loan Calculator</h1>
+                    <form id="loan-form">
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-text">₹</span>
+                                <input type="number" class="form-control" id="amount" placeholder="Loan amount">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <div class="input-group">
+                                <span class="input-group-text">%</span>
+                                <input type="number" class="form-control" id="interest" placeholder="Interest of your loan">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3 input-group">
+                            <span class="input-group-text">Yr</span>
+                            <input type="number" class="form-control" id="years" placeholder="Years to repay of loan">
+                        </div>
+
+                        <div class="d-grid pt-4">
+                            <input type="submit" value="Calculate" class="btn btn-dark btn-block" id="calculateresult">
+                        </div>
+
+                        <!-- loader gif -->
+
+                        <div id="loading" class="pt-3">
+                            <img src="https://media.tenor.com/bxeM9N2IXLsAAAAC/osita-osita-iheme.gif" alt="" height="150">
+                        </div>
+
+                        <!-- Result here -->
+                        
+                        <div id="result">
+                            <h3 class="heading display-6 pt-4">Result</h3>
+
+                            <div class="form-group pt-2">
+                                <div class="input-group">
+                                    <span class="input-group-text">Monthly Payment</span>
+                                    <input type="number" class="form-control" id="Monthly-Payment" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group pt-2">
+                                <div class="input-group">
+                                    <span class="input-group-text">Total Payment</span>
+                                    <input type="number" class="form-control" id="Total-Payment" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group pt-2">
+                                <div class="input-group">
+                                    <span class="input-group-text">Total interest</span>
+                                    <input type="number" class="form-control" id="Total-Interest" disabled>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
